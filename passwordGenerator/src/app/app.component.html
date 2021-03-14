@@ -21,7 +21,7 @@
         <div class="control">
           <label class="checkbox">
             <input (change)="onChangeUseNumbers()" type="checkbox" />
-            Use Numbers
+            Use Number
           </label>
         </div>
       </div>
@@ -41,6 +41,7 @@
         Generate!
       </button>
 
+      <!--structural directive - hides the component if the return value is false-->
       <div class="box" *ngIf="password">
         <label>Your Password</label>
         <input class="input" [value]="password" />

@@ -1,0 +1,11 @@
+
+<!--structural directive (*ngFor : used code reusablility)-->
+<!--Example2: (*ngFor="let i of getData()- this function returns array")-->
+<app-card
+  *ngFor="let post of posts"
+  [title]="post.title"
+  [imageUrl]="post.imageUrl"
+  [username]="post.username"
+  [content]="post.content"
+></app-card>
+
